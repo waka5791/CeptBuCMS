@@ -1,51 +1,57 @@
-body{
-    padding:10px;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
 }
 
-#paneA,
-#paneB,
-#paneC{
-    border:1px solid #ccc;
-    border-radius:5px;
-    padding:10px;
-    margin-bottom:10px;
+.main-layout {
+    height: 100vh;
 }
 
-#paneA{
-    min-height:80px;
+/* 左ペイン群 */
+.left-column {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
 }
 
-#paneB{
-    min-height:120px;
+/* ツアー一覧 */
+#paneA {
+    height: 40%;
+    overflow-y: auto;
+
+    border: 1px solid #ccc;
+    padding: 10px;
 }
 
-#paneC{
-    min-height:400px;
+/* ルーム一覧 */
+#paneB {
+    height: 60%;
+    overflow-y: auto;
+
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 10px;
 }
 
-.tour-link,
-.room-link{
-    margin-right:5px;
-    margin-bottom:5px;
+/* 右側カラム */
+.right-column {
+    height: 100vh;
+    padding: 0;
 }
 
-#paneA{
+/* ルーム情報 */
+#paneC {
+    height: 100vh;
+    overflow-y: auto;
 
-    min-height:80px;
-    max-height:300px;
-
-    overflow-y:auto;
-
+    border: 1px solid #ccc;
+    padding: 10px;
 }
 
-#tourList .list-group-item{
-
-    cursor:pointer;
-
-}
-
-.useMap
-{
-      max-height: 15px; 
-  height: 15px;
+/* 見出し */
+h5 {
+    margin-bottom: 10px;
 }

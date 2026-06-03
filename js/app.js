@@ -123,8 +123,7 @@ $(document).on(
 
 function renderRooms(tour) {
 
-    let html =
-        "<h5>ルーム一覧</h5>";
+    let html = "";
 
     roomIndex[tour]
         .forEach(function (room) {
@@ -143,15 +142,33 @@ function renderRooms(tour) {
     $("#paneB").html(html);
 
 }
-
+let currentTour = null;
+let currentRoom = null;
 $(document).on(
     "click",
     ".room-link",
-    function () {
+    function (e) {
+
+        e.preventDefault();
+
+        currentTour =
+            $(this).data("tour");
+
+        currentRoom =
+            $(this).data("room");
+
+        $(".room-link")
+            .removeClass("btn-primary");
+        $(".room-link")
+            .addClass("btn-secondary");
+        $(this)
+            .removeClass("btn-secondary");
+        $(this)
+            .addClass("btn-primary");
 
         loadRoomInfo(
-            $(this).data("tour"),
-            $(this).data("room")
+            currentTour,
+            currentRoom
         );
 
     }
@@ -400,7 +417,7 @@ async function loadRoomInfo(
         });
 
 
-    if (rankText == "") {
+    if (rankText == "" && conf.rank != undefined) {
         //@conf['rank'] = [["2", "ichigo-go", "5871", ""], ["4", "groovetube", "2753", ""], ["1", "flareons", "7996", ""], ["3", "nununu1", "5169", ""]]
         conf.rank.forEach(function (ranksArray) {
             rankText += "hoge";
@@ -551,15 +568,6 @@ async function loadRoomInfo(
 
             <div class="mb-3">
 <img src="data/img/map/${tourMap}.gif" title="${tourMap}">
-                <div>
-                    【${room}】
-                    ${escapeHtml(
-            tourName
-        ) || "-"
-
-        }
-
-                </div>
 
             </div>
 
@@ -591,7 +599,8 @@ async function loadRoomInfo(
         <div class="card mb-3">
 
             <div class="card-header">
-                ランキング
+                    【${room}】
+                    ${escapeHtml(tourName) || "-"}
             </div>
 
             <div class="card-body">
@@ -626,9 +635,10 @@ async function loadRoomInfo(
                     <tbody>
     `;
 
-    ranks.forEach(function (r) {
+    if (ranks.length > 0) {
+        ranks.forEach(function (r) {
 
-        html += `
+            html += `
         <tr>
 
             <td>
@@ -640,8 +650,8 @@ async function loadRoomInfo(
             <td>
 
                 ${escapeHtml(
-            r.player
-        )}
+                r.player
+            )}
 
             </td>
 
@@ -654,8 +664,8 @@ async function loadRoomInfo(
         </tr>
         `;
 
-    });
-
+        });
+    }
     html += `
                     </tbody>
 

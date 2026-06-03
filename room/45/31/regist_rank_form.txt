@@ -1,0 +1,20 @@
+<p style="font-size:1.3em;color:red;">順位登録〆切時間を過ぎました。</p>
+<table class="regsitRankTable" style="width:100%;padding:0px;margin:0px;">
+<tr><td>名前</td><td>ともだちコード</td><td>順位</td><td>魔力G</td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Fi/Fira_ds/profile_s.gif" class="hicon"><img src="../data/img/avater/36.png" style="height:32px;"> 紺碧のフィラ (id:Fira_ds) さん</td><td> ２０２０−２７１２−１９４０</td>
+<td style="text-align:center;">3位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td title=""><img src="http://www.hatena.ne.jp/users/ca/cardhero-bu/profile_s.gif" class="hicon"> イノセンス (id:cardhero-bu) さん</td><td> ３０９４−０１３４−１７７８</td>
+<td style="text-align:center;">2位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/av/avaadore/profile_s.gif" class="hicon"><img src="../data/img/avater/34.png" style="height:32px;"> アヴァ (id:avaadore) さん</td><td> ３１３６−９６２３−０６７３</td>
+<td style="text-align:center;">1位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ra/rahpsody/profile_s.gif" class="hicon"><img src="../data/img/avater/20.png" style="height:32px;"> らぷそでぃ (id:rahpsody) さん</td><td> １０７５−３７７７−３８５６</td>
+<td style="text-align:center;">4位</td>
+<td style="text-align:center;">-</td>
+</tr>
+</table>

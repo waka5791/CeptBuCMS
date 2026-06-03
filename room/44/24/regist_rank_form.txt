@@ -1,0 +1,17 @@
+<form action="./?regist_rank=true">
+<input type="submit" value="順位登録">
+<table>
+<tr><td><img src="http://www.hatena.ne.jp/users/Li/Lipsgr/profile_s.gif"> しぐれ (id:Lipsgr) さん</td><td> <b>５０６９−７５４８−９３７３</b></td>
+<td><select name="CEPTERRANK_Lipsgr">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<input type="hidden" name="room_number" value="tour/44/24">
+<input type="hidden" name="hatena_user_name" value="cepter-waka">
+<input type="hidden" name="doRankRegist" value="true">
+</table>
+</form>

@@ -1,0 +1,4 @@
+YOSHI-00
+selenite
+weathering
+okome5

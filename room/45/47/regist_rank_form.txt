@@ -1,0 +1,44 @@
+<form action="./?regist_rank=true">
+<input type="submit" value="順位登録">
+<table>
+<tr><td><img src="http://www.hatena.ne.jp/users/tk/tksk_0901/profile_s.gif"> たかさき (id:tksk_0901) さん</td><td> <b>２４０６−８１８４−７８６１</b></td>
+<td><select name="CEPTERRANK_tksk_0901">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3" selected>3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Cl/CleanAxe/profile_s.gif"> C.AXE (id:CleanAxe) さん</td><td> <b>４４２５−４５２３−６４９６</b></td>
+<td><select name="CEPTERRANK_CleanAxe">
+<option value="-">-
+<option value="rank1" selected>1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/no/noya/profile_s.gif"> りちょ (id:noya) さん</td><td> <b>４３８２−５９３１−５８９２</b></td>
+<td><select name="CEPTERRANK_noya">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2" selected>2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/J_/J_P/profile_s.gif"> ポニョナレフ (id:J_P) さん</td><td> <b>５３２７−４４６０−６９５６</b></td>
+<td><select name="CEPTERRANK_J_P">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4" selected>4位
+<option value="rankAI">切断
+</select></td></tr>
+<input type="hidden" name="room_number" value="tour/45/47">
+<input type="hidden" name="hatena_user_name" value="tksk_0901">
+<input type="hidden" name="doRankRegist" value="true">
+</table>
+</form>

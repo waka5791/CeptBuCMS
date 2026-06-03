@@ -1,0 +1,4 @@
+selenite
+noya
+cepter-mumrik
+slane

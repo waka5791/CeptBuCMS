@@ -1,0 +1,14 @@
+<table>
+<tr><td><img src="http://www.hatena.ne.jp/users/we/wednesday1976/profile_s.gif"> ダイジ (id:wednesday1976) さん</td><td> <b>０５５９−９８４５−２４５８</b></td>
+<td>2位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/sa/sawatake/profile_s.gif"> さわたけ (id:sawatake) さん</td><td> <b>３９５３−０１１０−０００２</b></td>
+<td>4位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/tk/tksk_0901/profile_s.gif"> たかさき (id:tksk_0901) さん</td><td> <b>２４０６−８１８４−７８６１</b></td>
+<td>3位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/hi/hidenori0418/profile_s.gif"> ひでのり (id:hidenori0418) さん</td><td> <b>３３９４−６６０７−６２８５</b></td>
+<td>1位</td>
+</tr>
+</table>

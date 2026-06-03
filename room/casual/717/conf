@@ -1,0 +1,5 @@
+@conf['players'] = []
+@conf['game_rule'] = "nouse_E"
+@conf['conf_error'] = "true"
+@conf['room_number'] = "717"
+@conf['room'] = "717"

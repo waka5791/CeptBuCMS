@@ -1,0 +1,20 @@
+<p style="font-size:1.3em;color:red;">順位登録〆切時間を過ぎました。</p>
+<table class="regsitRankTable" style="width:100%;padding:0px;margin:0px;">
+<tr><td>名前</td><td>ともだちコード</td><td>順位</td><td>魔力G</td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/we/wednesday1976/profile_s.gif" class="hicon"><img src="../data/img/avater/03.png" style="height:32px;"> ダイジ (id:wednesday1976) さん</td><td> ０５５９−９８４５−２４５８</td>
+<td style="text-align:center;">2位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/mo/mochimochi_1192/profile_s.gif" class="hicon"><img src="../data/img/avater/32.png" style="height:32px;"> もっちー (id:mochimochi_1192) さん</td><td> ０７７４−７３２８−６８３４ </td>
+<td style="text-align:center;">3位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Ai/AiriHaba/profile_s.gif" class="hicon"> 羽場愛理 (id:AiriHaba) さん</td><td> ２５３５−７１３７−３９９１</td>
+<td style="text-align:center;">1位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ka/kazu_kamo/profile_s.gif" class="hicon"><img src="../data/img/avater/08.png" style="height:32px;"> kaZu (id:kazu_kamo) さん</td><td> ２５３５−７３４７−２５４３</td>
+<td style="text-align:center;">4位</td>
+<td style="text-align:center;">-</td>
+</tr>
+</table>

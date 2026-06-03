@@ -1,0 +1,20 @@
+<p style="font-size:1.3em;color:red;">順位登録〆切時間を過ぎました。</p>
+<table class="regsitRankTable">
+<tr><td>名前</td><td>ともだちコード</td><td>順位</td><td>魔力 G</td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ta/taki77/profile_s.gif" class="hicon"><img src="../data/img/avater/07.png" style="height:32px;"> たき (id:taki77) さん</td><td> ２８３６−３４３７−４９１９</td>
+<td>切断</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Ho/HoniHoni/profile_s.gif" class="hicon"><img src="../data/img/avater/31.png" style="height:32px;"> ほにほに (id:HoniHoni) さん</td><td> １６３３−９０６８−２８９６</td>
+<td>2位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ta/taracco/profile_s.gif" class="hicon"> 芸人＠たらこ (id:taracco) さん</td><td> １９３４−３７３２−２５３８</td>
+<td>3位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ya/yamatoppp/profile_s.gif" class="hicon"> ヤマト (id:yamatoppp) さん</td><td> ４４２５−４５４４−２０１０</td>
+<td>1位</td>
+<td style="text-align:center;">-</td>
+</tr>
+</table>

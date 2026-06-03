@@ -1,0 +1,44 @@
+<form action="./?regist_rank=true">
+<input type="submit" value="順位登録">
+<table>
+<tr><td><img src="http://www.hatena.ne.jp/users/QT/QTAROW/profile_s.gif"> Q太郎 (id:QTAROW) さん</td><td> <b>１９７７−７３４５−４６５２</b></td>
+<td><select name="CEPTERRANK_QTAROW">
+<option value="-">-
+<option value="rank1" selected>1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/na/nakayuu/profile_s.gif"> 伏龍 (id:nakayuu) さん</td><td> <b>００４４−５９１８−５７６９</b></td>
+<td><select name="CEPTERRANK_nakayuu">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2" selected>2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ra/rahpsody/profile_s.gif"> らぷそでぃ (id:rahpsody) さん</td><td> <b>１０７５−３７７７−３８５６</b></td>
+<td><select name="CEPTERRANK_rahpsody">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4" selected>4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/mi/mizuha0720/profile_s.gif"> 瑞葉 (id:mizuha0720) さん</td><td> <b>２５７９−０２０８−３３６３</b></td>
+<td><select name="CEPTERRANK_mizuha0720">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3" selected>3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<input type="hidden" name="room_number" value="tour/44/22">
+<input type="hidden" name="hatena_user_name" value="QTAROW">
+<input type="hidden" name="doRankRegist" value="true">
+</table>
+</form>

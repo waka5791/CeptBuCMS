@@ -1,0 +1,35 @@
+<form action="./?regist_rank=true">
+<input type="submit" value="順位登録">
+<table>
+<tr><td><img src="http://www.hatena.ne.jp/users/Fi/Fira_ds/profile_s.gif"> 紺碧のフィラ (id:Fira_ds) さん</td><td> <b>２０２０−２７１２−１９４０</b></td>
+<td><select name="CEPTERRANK_Fira_ds">
+<option value="-">-
+<option value="rank1" selected>1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/sa/sawatake/profile_s.gif"> さわたけ (id:sawatake) さん</td><td> <b>３９５３−０１１０−０００２</b></td>
+<td><select name="CEPTERRANK_sawatake">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3" selected>3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Br/Bruce/profile_s.gif"> ぶるうす (id:Bruce) さん</td><td> <b>０５５９−９８１５−２２７３</b></td>
+<td><select name="CEPTERRANK_Bruce">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2" selected>2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<input type="hidden" name="room_number" value="tour/47/7">
+<input type="hidden" name="hatena_user_name" value="Fira_ds">
+<input type="hidden" name="doRankRegist" value="true">
+</table>
+</form>

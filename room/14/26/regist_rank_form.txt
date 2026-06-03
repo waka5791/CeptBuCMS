@@ -1,0 +1,97 @@
+<p style="font-size:1.3em;color:red;">順位登録〆切時間を過ぎました。</p>
+<form action="./?regist_rank=true">
+<table class="regsitRankTable">
+<tr><td>名前</td><td>ともだちコード</td><td>順位</td><td>魔力 G</td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/pa/pata2000/profile_s.gif" class="hicon"><img src="../data/img/avater/01.png" style="height:32px;"> パタ (id:pata2000) さん</td><td> ３２６６０６２２４３８３</td>
+<td><select name="CEPTERRANK_pata2000">
+<option value="-">-
+<option value="rank1" selected>1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td>
+<td><input name="CEPTERGAIN_pata2000" size="7" value=""></td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/na/nakayuu/profile_s.gif" class="hicon"> 伏龍 (id:nakayuu) さん</td><td> ００４４−５９１８−５７６９</td>
+<td><select name="CEPTERRANK_nakayuu">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2" selected>2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td>
+<td><input name="CEPTERGAIN_nakayuu" size="7" value=""></td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ce/cepter-waka/profile_s.gif" class="hicon"><img src="../data/img/avater/29.png" style="height:32px;"> waka (id:cepter-waka) さん</td><td> ４９８３−８０７８−６４７７</td>
+<td><select name="CEPTERRANK_cepter-waka">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3" selected>3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td>
+<td><input name="CEPTERGAIN_cepter-waka" size="7" value=""></td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/images/common/icon-user.gif" class="hicon"> yen1800 (id:yen1800) さん</td><td> </td>
+<td><select name="CEPTERRANK_yen1800">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4" selected>4位
+<option value="rankAI">切断
+</select></td>
+<td><input name="CEPTERGAIN_yen1800" size="7" value=""></td>
+</tr>
+<input type="hidden" name="room_number" value="tour/14/26">
+<input type="hidden" name="hatena_user_name" value="cepter-waka">
+<input type="hidden" name="doRankRegist" value="true">
+<tr>
+<td colspan=5 align=right>
+<label for="goal" onClick="$('goal_round').disabled = false;" ondblclick="if($('goal').checked){$('goal').checked = false;}"><input type="radio" name="goal_result" value="goal" id="goal">目標達成</label>
+<label for="sudden_death" onClick="$('goal_round').disabled = false;" ondblclick="if($('goal').checked){$('goal').checked = false;}"><input type="radio" name="goal_result" value="sudden_death" id="sudden_death">サドンデス終了</label>
+<label for="round_over" onClick="$('goal_round').disabled = true;"><input type="radio" name="goal_result" value="round_over" id="round_over">規定Ｒ終了</label>
+終了Ｒ：<select name="goal_round" id="goal_round">
+<option value="0">-
+<option value="30">30
+<option value="29">29
+<option value="28">28
+<option value="27">27
+<option value="26">26
+<option value="25">25
+<option value="24">24
+<option value="23">23
+<option value="22">22
+<option value="21">21
+<option value="20">20
+<option value="19">19
+<option value="18">18
+<option value="17">17
+<option value="16">16
+<option value="15">15
+<option value="14">14
+<option value="13">13
+<option value="12">12
+<option value="11">11
+<option value="10">10
+<option value="9">9
+<option value="8">8
+<option value="7">7
+<option value="6">6
+<option value="5">5
+<option value="4">4
+<option value="3">3
+<option value="2">2
+<option value="1">1
+</select>Ｒ
+<br>
+魔力の数字は、全角で入力してもいいよ。
+<br>
+<input type="submit" value="順位登録">
+</td>
+</tr>
+</table>
+</form>

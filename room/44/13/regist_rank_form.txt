@@ -1,0 +1,44 @@
+<form action="./?regist_rank=true">
+<input type="submit" value="順位登録">
+<table>
+<tr><td><img src="http://www.hatena.ne.jp/users/to/tomotomo7/profile_s.gif"> ともとも (id:tomotomo7) さん</td><td> <b>１０３２−４３９９−０７４３</b></td>
+<td><select name="CEPTERRANK_tomotomo7">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3" selected>3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ce/cepter-mumrik/profile_s.gif"> ムムリク (id:cepter-mumrik) さん</td><td> <b>４３８２−５０３５−９７８６</b></td>
+<td><select name="CEPTERRANK_cepter-mumrik">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2" selected>2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/do/domovoi/profile_s.gif"> 勇者ドモボーイ (id:domovoi) さん</td><td> <b>１２４７−１７７２−２６４４</b></td>
+<td><select name="CEPTERRANK_domovoi">
+<option value="-">-
+<option value="rank1" selected>1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/QT/QTAROW/profile_s.gif"> Q太郎 (id:QTAROW) さん</td><td> <b>１９７７−７３４５−４６５２</b></td>
+<td><select name="CEPTERRANK_QTAROW">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4" selected>4位
+<option value="rankAI">切断
+</select></td></tr>
+<input type="hidden" name="room_number" value="tour/44/13">
+<input type="hidden" name="hatena_user_name" value="cepter-waka">
+<input type="hidden" name="doRankRegist" value="true">
+</table>
+</form>

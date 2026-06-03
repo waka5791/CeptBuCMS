@@ -1,0 +1,85 @@
+0.122829<img src="http://www.hatena.ne.jp/images/common/icon-user.gif"><img src="http://www.hatena.ne.jp/images/common/icon-user.gif"><img src="http://www.hatena.ne.jp/images/common/icon-user.gif"><img src="http://www.hatena.ne.jp/images/common/icon-user.gif"><img src="http://www.hatena.ne.jp/images/common/icon-user.gif"><img src="http://www.hatena.ne.jp/images/common/icon-user.gif"><div id="messages">
+<ul id="comment_line">
+<li><span class="timestamp">05/17 13:18</span><img src="http://www.hatena.ne.jp/users/YO/YOSHI-00/profile.gif" class="hatenaProfile"><span class="handleText">ヨシ</span></li>
+<li><span class="messageTextContainer">ギャー落ちたー！</span></li>
+<hr>
+<li><span class="timestamp">05/17 12:50</span><img src="http://www.hatena.ne.jp/users/YO/YOSHI-00/profile.gif" class="hatenaProfile"><span class="handleText">ヨシ</span></li>
+<li><span class="messageTextContainer">卓が見えないです、フィラさんと相互にならない……</span></li>
+<hr>
+<li><span class="timestamp">05/17 12:40</span><img src="http://www.hatena.ne.jp/users/YO/YOSHI-00/profile.gif" class="hatenaProfile"><span class="handleText">ヨシ</span></li>
+<li><span class="messageTextContainer"><b style="color:blue">参加します。</b></span></li>
+<hr>
+<li><span class="timestamp">05/17 12:38</span><img src="http://www.hatena.ne.jp/users/Fi/Fira_ds/profile.gif" class="hatenaProfile"><span class="handleText">紺碧のフィラ</span></li>
+<li><span class="messageTextContainer">てすてす</span></li>
+<hr>
+<li><span class="timestamp">05/17 12:37</span><img src="http://www.hatena.ne.jp/users/Fi/Fira_ds/profile.gif" class="hatenaProfile"><span class="handleText">紺碧のフィラ</span></li>
+<li><span class="messageTextContainer">あと　よしさんがくるそうです^^</span></li>
+<hr>
+<li><span class="timestamp">05/17 12:31</span><img src="http://www.hatena.ne.jp/users/Fi/Fira_ds/profile.gif" class="hatenaProfile"><span class="handleText">紺碧のフィラ</span></li>
+<li><span class="messageTextContainer">一行かくと　反映までに3分かかります。あまえびさんありがとう^^</span></li>
+<hr>
+<li><span class="timestamp">05/17 12:30</span><img src="http://www.hatena.ne.jp/users/tk/tksk_0901/profile.gif" class="hatenaProfile"><span class="handleText">たかさき</span></li>
+<li><span class="messageTextContainer">こんにちわ！参加しますよー！</span></li>
+<hr>
+<li><span class="timestamp">05/17 12:30</span><img src="http://www.hatena.ne.jp/users/tk/tksk_0901/profile.gif" class="hatenaProfile"><span class="handleText">たかさき</span></li>
+<li><span class="messageTextContainer"><b style="color:blue">参加します。</b></span></li>
+<hr>
+<li><span class="timestamp">05/17 12:30</span><img src="http://www.hatena.ne.jp/users/Fi/Fira_ds/profile.gif" class="hatenaProfile"><span class="handleText">紺碧のフィラ</span></li>
+<li><span class="messageTextContainer">てすてす</span></li>
+<hr>
+<li><span class="timestamp">05/17 12:27</span><img src="http://www.hatena.ne.jp/users/th/thereminvox/profile.gif" class="hatenaProfile"><span class="handleText">軍艦甘えび</span></li>
+<li><span class="messageTextContainer">やるよーテロテローン</span></li>
+<hr>
+<li><span class="timestamp">05/17 12:26</span><img src="http://www.hatena.ne.jp/users/th/thereminvox/profile.gif" class="hatenaProfile"><span class="handleText">軍艦甘えび</span></li>
+<li><span class="messageTextContainer"><b style="color:blue">参加します。</b></span></li>
+<hr>
+<li><span class="timestamp">05/17 12:25</span><img src="http://www.hatena.ne.jp/users/Fi/Fira_ds/profile.gif" class="hatenaProfile"><span class="handleText">紺碧のフィラ</span></li>
+<li><span class="messageTextContainer"><b style="color:blue">参加します。</b></span></li>
+<hr>
+</ul>
+</div>
+
+..................................................<form action="./?regist_rank=true">
+<input type="submit" value="順位登録"><span class="caution">※登録時、自動リロード停止させて下さい。</span>
+<table>
+<tr><td><img src="http://www.hatena.ne.jp/users/Fi/Fira_ds/profile_s.gif"> 紺碧のフィラ (id:Fira_ds) さん</td><td> <b>２０２０−２７１２−１９４０</b></td>
+<td><select name="CEPTERRANK_Fira_ds">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3" selected>3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/th/thereminvox/profile_s.gif"> 軍艦甘えび (id:thereminvox) さん</td><td> <b>２５３５−６６６９−６６７１</b></td>
+<td><select name="CEPTERRANK_thereminvox">
+<option value="-">-
+<option value="rank1" selected>1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/tk/tksk_0901/profile_s.gif"> たかさき (id:tksk_0901) さん</td><td> <b>２４０６−８１８４−７８６１</b></td>
+<td><select name="CEPTERRANK_tksk_0901">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2" selected>2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/YO/YOSHI-00/profile_s.gif"> ヨシ (id:YOSHI-00) さん</td><td> <b>２０６３−２３２２−３６９５</b></td>
+<td><select name="CEPTERRANK_YOSHI-00">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI" selected>切断
+</select></td></tr>
+<input type="hidden" name="room_number" value="tour/37/14">
+<input type="hidden" name="hatena_user_name" value="Fira_ds">
+<input type="hidden" name="doRankRegist" value="true">
+</table>
+</form>

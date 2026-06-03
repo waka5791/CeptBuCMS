@@ -1,0 +1,19 @@
+<table>
+<tr><td>名前</td><td>ともだちコード</td><td>順位</td><td>魔力 G</td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Fi/Fira_ds/profile_s.gif"> 紺碧のフィラ (id:Fira_ds) さん</td><td> ２０２０−２７１２−１９４０</td>
+<td>1位</td>
+<td style="text-align:right;">7172 G</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/so/sotogamo_nakiku/profile_s.gif"> 外鴨なきく (id:sotogamo_nakiku) さん</td><td> ４６８３−１５１２−４５２９</td>
+<td>2位</td>
+<td style="text-align:right;">2871 G</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ta/taki77/profile_s.gif"> たき (id:taki77) さん</td><td> ２８３６−３４３７−４９１９</td>
+<td>切断</td>
+<td style="text-align:right;">2704 G</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Cl/CleanAxe/profile_s.gif"> C.AXE (id:CleanAxe) さん</td><td> ４４２５−４５２３−６４９６</td>
+<td>3位</td>
+<td style="text-align:right;">2670 G</td>
+</tr>
+</table>

@@ -1,0 +1,14 @@
+<table>
+<tr><td><img src="http://www.hatena.ne.jp/users/Fi/Fira_ds/profile_s.gif"> 紺碧のフィラ (id:Fira_ds) さん</td><td> <b>２０２０−２７１２−１９４０</b></td>
+<td>2位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/SA/SAlly/profile_s.gif"> サリー (id:SAlly) さん</td><td> <b>２３２１−１４５５−９６７６</b></td>
+<td>切断</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ni/nimbost/profile_s.gif"> 夜喰兎 (id:nimbost) さん</td><td> <b>３８６７−１０６６−０１９５</b></td>
+<td>1位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ch/chintu/profile_s.gif"> ナユタ (id:chintu) さん</td><td> <b>２８３６−３１６１−７２３３ </b></td>
+<td>3位</td>
+</tr>
+</table>

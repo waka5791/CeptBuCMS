@@ -1,0 +1,17 @@
+@conf['players'] = ["insect7", "weathering", "hsu_mai", "ceptaros", "tendon-block", "kazu_kamo", "noya", "dhlkai"]
+@conf['regist_time'] = "20090321225057"
+@conf['sudden_death'] = "x"
+@conf['hatena_user_name'] = "insect7"
+@conf['game_rule'] = "nouse_E"
+@conf['gain'] = "90000"
+@conf['now_doing'] = "suspend"
+@conf['rank'] = [["1", "ceptaros", "", ""], ["1", "cepter-waka", "", ""], ["1", "dhlkai", "", ""], ["1", "hsu_mai", "", ""], ["1", "insect7", "", ""], ["1", "kazu_kamo", "", ""], ["1", "noya", "", ""], ["1", "tendon-block", "", ""], ["1", "weathering", "", ""]]
+@conf['room_number'] = "1"
+@conf['users_count'] = "4"
+@conf['map'] = "LADYBUG"
+@conf['round'] = "30"
+@conf['room_nickname'] = "%E3%83%86%E3%82%B9%E3%83%88"
+@conf['friend_code'] = "5284-4456-4450"
+@conf['comment'] = ""
+@conf['time_limit'] = "10"
+@conf['room'] = "1"

@@ -1,0 +1,19 @@
+<table>
+<tr><td>名前</td><td>ともだちコード</td><td>順位</td><td>魔力 G</td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Fi/Fira_ds/profile_s.gif"> 紺碧のフィラ (id:Fira_ds) さん</td><td> ２０２０−２７１２−１９４０</td>
+<td>4位</td>
+<td style="text-align:right;">525 G</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Yu/Yuki-a-MAS/profile_s.gif"> こっきゅん (id:Yuki-a-MAS) さん</td><td> ２４４９−７６７１−０７９４</td>
+<td>1位</td>
+<td style="text-align:right;">6670 G</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/SA/SAlly/profile_s.gif"> サリー (id:SAlly) さん</td><td> ２３２１−１４５５−９６７６</td>
+<td>3位</td>
+<td style="text-align:right;">595 G</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/YO/YOSHI-00/profile_s.gif"> ヨシ (id:YOSHI-00) さん</td><td> ２０６３−２３２２−３６９５</td>
+<td>2位</td>
+<td style="text-align:right;">11497 G</td>
+</tr>
+</table>

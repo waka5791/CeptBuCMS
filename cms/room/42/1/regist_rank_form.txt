@@ -1,0 +1,14 @@
+<table>
+<tr><td><img src="http://www.hatena.ne.jp/users/ta/taracco/profile_s.gif"> 芸人＠たらこ (id:taracco) さん</td><td> <b>１９３４−３７３２−２５３８</b></td>
+<td>1位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/no/noya/profile_s.gif"> りちょ (id:noya) さん</td><td> <b>４３８２−５９３１−５８９２</b></td>
+<td>3位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Ka/Kasupi/profile_s.gif"> kasupi (id:Kasupi) さん</td><td> <b>４６４０−２０１５−５２１４ </b></td>
+<td>4位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Br/Bruce/profile_s.gif"> ぶるうす (id:Bruce) さん</td><td> <b>０５５９−９８１５−２２７３</b></td>
+<td>2位</td>
+</tr>
+</table>

@@ -1,0 +1,97 @@
+<form action="./?regist_rank=true">
+<select name="goal_round" id="goal_round">
+<option value="40">40
+<option value="39">39
+<option value="38">38
+<option value="37">37
+<option value="36">36
+<option value="35">35
+<option value="34">34
+<option value="33">33
+<option value="32">32
+<option value="31">31
+<option value="30">30
+<option value="29">29
+<option value="28">28
+<option value="27">27
+<option value="26">26
+<option value="25">25
+<option value="24">24
+<option value="23">23
+<option value="22">22
+<option value="21">21
+<option value="20">20
+<option value="19">19
+<option value="18">18
+<option value="17">17
+<option value="16">16
+<option value="15">15
+<option value="14">14
+<option value="13">13
+<option value="12">12
+<option value="11">11
+<option value="10">10
+<option value="9">9
+<option value="8">8
+<option value="7">7
+<option value="6">6
+<option value="5">5
+<option value="4">4
+<option value="3">3
+<option value="2">2
+<option value="1">1
+</select>Ｒ
+<label for="goal" onClick="$('goal_round').disabled = false;" ondblclick="if($('goal').checked){$('goal').checked = false;}"><input type="radio" name="goal_result" value="goal" id="goal">目標達成</label>
+<label for="round_over" onClick="$('goal_round').disabled = true;"><input type="radio" name="goal_result" value="round_over" id="round_over">規定Ｒ終了</label>
+<input type="submit" value="順位登録">
+<table>
+<tr><td>名前</td><td>ともだちコード</td><td>順位</td><td>魔力 G</td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/to/tomotomo7/profile_s.gif"> ともとも (id:tomotomo7) さん</td><td> １０３２−４３９９−０７４３</td>
+<td><select name="CEPTERRANK_tomotomo7">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2" selected>2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td>
+<td><input name="CEPTERGAIN_tomotomo7" size="7" value=""></td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ra/rahpsody/profile_s.gif"> らぷそでぃ (id:rahpsody) さん</td><td> １０７５−３７７７−３８５６</td>
+<td><select name="CEPTERRANK_rahpsody">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3" selected>3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td>
+<td><input name="CEPTERGAIN_rahpsody" size="7" value=""></td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/hi/hidenori0418/profile_s.gif"> ひでのり (id:hidenori0418) さん</td><td> ３３９４−６６０７−６２８５</td>
+<td><select name="CEPTERRANK_hidenori0418">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4" selected>4位
+<option value="rankAI">切断
+</select></td>
+<td><input name="CEPTERGAIN_hidenori0418" size="7" value=""></td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/tm/tmg44/profile_s.gif"> めぐ (id:tmg44) さん</td><td> ３３５１−８３７８−２４１２</td>
+<td><select name="CEPTERRANK_tmg44">
+<option value="-">-
+<option value="rank1" selected>1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td>
+<td><input name="CEPTERGAIN_tmg44" size="7" value=""></td>
+</tr>
+<input type="hidden" name="room_number" value="tour/45/52">
+<input type="hidden" name="hatena_user_name" value="cepter-waka">
+<input type="hidden" name="doRankRegist" value="true">
+</table>
+</form>

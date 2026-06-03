@@ -1,0 +1,20 @@
+<p style="font-size:1.3em;color:red;">順位登録〆切時間を過ぎました。</p>
+<table class="regsitRankTable">
+<tr><td>名前</td><td>ともだちコード</td><td>順位</td><td>魔力 G</td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/al/alpu/profile_s.gif" class="hicon"><img src="../data/img/avater/04.png" style="height:32px;"> あるぷ (id:alpu) さん</td><td> ５１９８−５６６０−０４４３</td>
+<td>1位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/images/common/icon-user.gif" class="hicon"> higejon (id:higejon) さん</td><td> </td>
+<td>2位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/hi/hidenori0418/profile_s.gif" class="hicon"><img src="../data/img/avater/17.png" style="height:32px;"> ひでのり (id:hidenori0418) さん</td><td> ３３９４−６６０７−６２８５</td>
+<td>3位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/so/sotogamo_nakiku/profile_s.gif" class="hicon"> 外鴨なきく (id:sotogamo_nakiku) さん</td><td> ４６８３−１５１２−４５２９</td>
+<td>4位</td>
+<td style="text-align:center;">-</td>
+</tr>
+</table>

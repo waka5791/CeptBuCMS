@@ -1,0 +1,20 @@
+<p style="font-size:1.3em;color:red;">順位登録〆切時間を過ぎました。</p>
+<table class="regsitRankTable" style="width:100%;padding:0px;margin:0px;">
+<tr><td>名前</td><td>ともだちコード</td><td>順位</td><td>魔力G</td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Ka/Kasupi/profile_s.gif" class="hicon"><img src="../data/img/avater/33.png" style="height:32px;"> kasupi (id:Kasupi) さん</td><td> ３０９４−６７６８−７９５１</td>
+<td style="text-align:center;">1位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td title=""><img src="http://www.hatena.ne.jp/users/te/tendon-block/profile_s.gif" class="hicon"> 総督 (id:tendon-block) さん<div style="text-align:right;">キャラクター名：ジャコウ総督</div></td><td> ０１３０−５１６３−２８３５</td>
+<td style="text-align:center;">2位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Yu/Yuki-a-MAS/profile_s.gif" class="hicon"><img src="../data/img/avater/35.png" style="height:32px;"> こっきゅん (id:Yuki-a-MAS) さん</td><td> ２４４９−７６７１−０７９４</td>
+<td style="text-align:center;">3位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ni/nimbost/profile_s.gif" class="hicon"><img src="../data/img/avater/31.png" style="height:32px;"> 夜喰兎 (id:nimbost) さん<div style="text-align:right;">キャラクター名：夜喰いの兎</div></td><td> ３８６７−１０６６−０１９５</td>
+<td style="text-align:center;">4位</td>
+<td style="text-align:center;">-</td>
+</tr>
+</table>

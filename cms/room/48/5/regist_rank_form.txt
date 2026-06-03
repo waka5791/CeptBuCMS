@@ -1,0 +1,14 @@
+<table>
+<tr><td><img src="http://www.hatena.ne.jp/users/ch/chintu/profile_s.gif"> ナユタ (id:chintu) さん</td><td> <b>２８３６−３１６１−７２３３ </b></td>
+<td>3位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Br/Bruce/profile_s.gif"> ぶるうす (id:Bruce) さん</td><td> <b>０５５９−９８１５−２２７３</b></td>
+<td>1位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Fi/Fira_ds/profile_s.gif"> 紺碧のフィラ (id:Fira_ds) さん</td><td> <b>２０２０−２７１２−１９４０</b></td>
+<td>2位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/no/noya/profile_s.gif"> りちょ (id:noya) さん</td><td> <b>４３８２−５９３１−５８９２</b></td>
+<td>切断</td>
+</tr>
+</table>

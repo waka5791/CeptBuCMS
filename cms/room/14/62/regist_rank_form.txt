@@ -1,0 +1,44 @@
+<form action="./?regist_rank=true">
+<input type="submit" value="順位登録">
+<table>
+<tr><td><img src="http://www.hatena.ne.jp/users/we/weathering/profile_s.gif"> ウェザリング (id:weathering) さん</td><td> <b>３６９５−３０８３−６９４６</b></td>
+<td><select name="CEPTERRANK_weathering">
+<option value="-">-
+<option value="rank1" selected>1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ok/okome5/profile_s.gif"> たかし (id:okome5) さん</td><td> <b>３８２４−１５７４−７１５２</b></td>
+<td><select name="CEPTERRANK_okome5">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2" selected>2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/images/common/icon-user.gif"> yen1800 (id:yen1800) さん</td><td> <b></b></td>
+<td><select name="CEPTERRANK_yen1800">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3" selected>3位
+<option value="rank4">4位
+<option value="rankAI">切断
+</select></td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/xc/xcepter/profile_s.gif"> xcepter (id:xcepter) さん</td><td> <b>１７６２−５７３４−０６０１</b></td>
+<td><select name="CEPTERRANK_xcepter">
+<option value="-">-
+<option value="rank1">1位
+<option value="rank2">2位
+<option value="rank3">3位
+<option value="rank4">4位
+<option value="rankAI" selected>切断
+</select></td></tr>
+<input type="hidden" name="room_number" value="tour/14/62">
+<input type="hidden" name="hatena_user_name" value="cepter-waka">
+<input type="hidden" name="doRankRegist" value="true">
+</table>
+</form>

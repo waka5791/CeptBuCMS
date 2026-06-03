@@ -1,0 +1,20 @@
+<p style="font-size:1.3em;color:red;">順位登録〆切時間を過ぎました。</p>
+<table class="regsitRankTable" style="width:100%;padding:0px;margin:0px;">
+<tr><td>名前</td><td>ともだちコード</td><td>順位</td><td>魔力G</td></tr>
+<tr><td title=""><img src="http://www.hatena.ne.jp/images/common/icon-user.gif" class="hicon"> furuisima (id:furuisima) さん</td><td> </td>
+<td style="text-align:center;">1位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/su/sumirededo/profile_s.gif" class="hicon"><img src="../data/img/avater/28.png" style="height:32px;"> すみれ (id:sumirededo) さん</td><td> ３３５１−７１１３−００８２</td>
+<td style="text-align:center;">2位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ch/chintu/profile_s.gif" class="hicon"><img src="../data/img/avater/04.png" style="height:32px;"> ナユタ (id:chintu) さん</td><td> ２８３６−３１６１−７２３３ </td>
+<td style="text-align:center;">3位</td>
+<td style="text-align:center;">-</td>
+</tr>
+<tr><td title=""><img src="http://www.hatena.ne.jp/images/common/icon-user.gif" class="hicon"> tsushi_24 (id:tsushi_24) さん</td><td> </td>
+<td style="text-align:center;">4位</td>
+<td style="text-align:center;">-</td>
+</tr>
+</table>

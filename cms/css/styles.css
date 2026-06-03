@@ -1,0 +1,51 @@
+body{
+    padding:10px;
+}
+
+#paneA,
+#paneB,
+#paneC{
+    border:1px solid #ccc;
+    border-radius:5px;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+#paneA{
+    min-height:80px;
+}
+
+#paneB{
+    min-height:120px;
+}
+
+#paneC{
+    min-height:400px;
+}
+
+.tour-link,
+.room-link{
+    margin-right:5px;
+    margin-bottom:5px;
+}
+
+#paneA{
+
+    min-height:80px;
+    max-height:300px;
+
+    overflow-y:auto;
+
+}
+
+#tourList .list-group-item{
+
+    cursor:pointer;
+
+}
+
+.useMap
+{
+      max-height: 15px; 
+  height: 15px;
+}

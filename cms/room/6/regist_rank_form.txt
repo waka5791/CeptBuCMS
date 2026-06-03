@@ -1,0 +1,9 @@
+<table>
+<tr><td>名前</td><td>ともだちコード</td><td>順位</td><td>魔力 G</td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/images/common/icon-user.gif"> waka (id:debug-userx-linux) さん</td><td> ００００−１１１１−２２２２</td>
+<td style="text-align:right;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/images/common/icon-user.gif"> waka (id:debug-userx) さん</td><td> ００００−００００−００００</td>
+<td style="text-align:right;">-</td>
+</tr>
+</table>

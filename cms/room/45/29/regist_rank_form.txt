@@ -1,0 +1,17 @@
+<table>
+<tr><td><img src="http://www.hatena.ne.jp/users/ce/cepter-mumrik/profile_s.gif"> ムムリク (id:cepter-mumrik) さん</td><td> <b>４３８２−５０３５−９７８６</b></td>
+<td>3位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/th/thereminvox/profile_s.gif"> 軍艦甘えび (id:thereminvox) さん</td><td> <b>２５３５−６６６９−６６７１</b></td>
+<td>2位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/Ha/Harjie/profile_s.gif"> Harjie (id:Harjie) さん</td><td> <b>２１４９−１１７４−８４３４</b></td>
+<td>4位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/na/nakayuu/profile_s.gif"> 伏龍 (id:nakayuu) さん</td><td> <b>００４４−５９１８−５７６９</b></td>
+<td>1位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/sa/sawatake/profile_s.gif"> さわたけ (id:sawatake) さん</td><td> <b>３９５３−０１１０−０００２</b></td>
+<td align="center">-</td>
+</tr>
+</table>

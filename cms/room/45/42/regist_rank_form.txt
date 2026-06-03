@@ -1,0 +1,14 @@
+<table>
+<tr><td><img src="http://www.hatena.ne.jp/users/sh/shonen13/profile_s.gif"> 少年 (id:shonen13) さん</td><td> <b>４９８３−７９７８−４９３０</b></td>
+<td>4位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/mo/mochimochi_1192/profile_s.gif"> もっちー (id:mochimochi_1192) さん</td><td> <b>０７７４−７３２８−６８３４ </b></td>
+<td>3位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ce/cepter-mumrik/profile_s.gif"> ムムリク (id:cepter-mumrik) さん</td><td> <b>４３８２−５０３５−９７８６</b></td>
+<td>1位</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/no/noya/profile_s.gif"> りちょ (id:noya) さん</td><td> <b>４３８２−５９３１−５８９２</b></td>
+<td>2位</td>
+</tr>
+</table>

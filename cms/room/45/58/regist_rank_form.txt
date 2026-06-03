@@ -1,0 +1,23 @@
+<div style="font-size:1.3em;background-color:white;color:red;">
+順位登録〆切時間を過ぎました。
+</div>
+<table>
+<tr><td colspan="4"></td></tr>
+<tr><td>名前</td><td>ともだちコード</td><td>順位</td><td>魔力 G</td></tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/i_/i_on/profile_s.gif"><img src="../data/img/avater/30.png" style="height:32px;"> シショ (id:i_on) さん</td><td> ４３８２−５２８５−３７９１</td>
+<td>1位</td>
+<td style="text-align:right;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/te/tendon-block/profile_s.gif"> 総督 (id:tendon-block) さん</td><td> ０１３０−５１６３−２８３５</td>
+<td>2位</td>
+<td style="text-align:right;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/ra/rahpsody/profile_s.gif"><img src="../data/img/avater/20.png" style="height:32px;"> らぷそでぃ (id:rahpsody) さん</td><td> １０７５−３７７７−３８５６</td>
+<td>3位</td>
+<td style="text-align:right;">-</td>
+</tr>
+<tr><td><img src="http://www.hatena.ne.jp/users/sa/sawatake/profile_s.gif"><img src="../data/img/avater/32.png" style="height:32px;"> さわたけ (id:sawatake) さん</td><td> ３９５３−０１１０−０００２</td>
+<td>4位</td>
+<td style="text-align:right;">-</td>
+</tr>
+</table>

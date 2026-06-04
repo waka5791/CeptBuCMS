@@ -45,7 +45,9 @@ function waitAndClick(selector, callback) {
 
 waitAndClick(`[data-tour="${argT}"]`, () => {
     waitAndClick(`[data-room="${argR}"]`, () => {
-        //waitAndClick(`[data-room="${argR}"]`);
+        requestAnimationFrame(() => {
+            waitAndClick(`[data-room="${argR}"]`);//念入り
+        });
     });
 });
 async function loadRoomIndex() {

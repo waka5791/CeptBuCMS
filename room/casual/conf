@@ -11,7 +11,7 @@
 @conf['min_game_cnt'] = "1"
 @conf['tour_spanS'] = ""
 @conf['game_rule'] = "nouse_E"
-@conf['gain'] = ""
+@conf['gain'] = "-"
 @conf['now_doing'] = "now_calling"
 @conf['point_in_tour_vs2'] = []
 @conf['league_type'] = "level_league"
@@ -36,8 +36,8 @@
 @conf['point_in_tour_bonus'] = []
 @conf['apply_result'] = "o"
 @conf['point_AI_treat'] = "no_count"
-@conf['round'] = "35"
-@conf['room_nickname'] = "Casual"
+@conf['round'] = "-"
+@conf['room_nickname'] = "Free"
 @conf['friend_code'] = ""
 @conf['tour_entrant'] = ""
 @conf['room'] = ""

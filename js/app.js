@@ -430,7 +430,7 @@ async function loadRoomInfo(
 
     try {
 
-        //rankText = await $.get(`room/${tour}/${room}/rank`);
+        rankText = await $.get(`room/${tour}/${room}/rank`);
 
     }
     catch (e) {
@@ -501,41 +501,7 @@ async function loadRoomInfo(
     }
     const ranks = [];
 
-    rankText
-        .split(/\r?\n/)
-        .forEach(function (line) {
 
-            line = line.trim();
-
-            if (!line) {
-                return;
-            }
-
-            const cols = line.split(",");
-
-            ranks.push({
-
-                rank:
-                    parseInt(
-                        cols[0]
-                            .replace(
-                                "rank",
-                                ""
-                            )
-                    ),
-
-                player:
-                    (cols[1] || "")
-                        .trim(),
-
-                score:
-                    parseInt(
-                        cols[2] || 6543210
-                    )
-
-            });
-
-        });
 
 
     if (rankText == "" && conf.rank != undefined) {
@@ -555,6 +521,22 @@ async function loadRoomInfo(
                 score:
                     ranksArray[2]
 
+            });
+        });
+    } else if(rankText != undefined && rankText.length > 10) {
+        rankText.split(/\r?\n/).forEach(function (line) {
+            line = line.trim();
+            if (!line) {
+                return;
+            }
+            const cols = line.split(",");
+            ranks.push({
+                rank:
+                    parseInt(cols[0].replace("rank", "")),
+                player:
+                    (cols[1] || "").trim(),
+                score:
+                    parseInt(cols[2] || 6543210)
             });
         });
     }
@@ -726,13 +708,12 @@ async function loadRoomInfo(
     </div>
 
     `;
-    } else {
+    } else if(tour == "casual") {
         html += `
 
     <div class="card mb-3">
         <div class="card-header">
-            No. ${tour} 
-            ${decodeComment(tourInfo[tour]?.room_nickname || tour)}
+            フリー対戦
         </div>
         <div>
         共有用URL
@@ -844,12 +825,12 @@ async function loadRoomInfo(
         </div>
     `;
 
-        
+
         html += `
         <div class="card">
 
             <div class="card-header">
-                ルームコメント ${cometeoLink.length > 0 ?  `<a href="${cometeoLink}" target="_blank">${cometeoLink}</a>`:""}
+                ルームコメント ${cometeoLink.length > 0 ? `<a href="${cometeoLink}" target="_blank">${cometeoLink}</a>` : ""}
             </div>
 
             <div class="card-body">

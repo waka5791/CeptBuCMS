@@ -56,7 +56,11 @@ async function loadRoomIndex() {
         await $.getJSON(
             "data/room.json"
         );
-
+    tourInfo  =
+        await $.get(
+            `data/tourconf.json`
+        );
+/*
     const tours =
         Object.keys(roomIndex);
 
@@ -85,9 +89,11 @@ async function loadRoomIndex() {
             };
 
         }
-
     }
+*/
+    const json = JSON.stringify(tourInfo);
 
+    console.log(json);
 }
 function renderTours() {
 

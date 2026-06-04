@@ -138,6 +138,7 @@ function renderTours() {
     `;
 
     $("#paneA").html(html);
+    $("#announce").text("ﾅﾆｺﾚ");
 
 }
 $(document).on(

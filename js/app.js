@@ -19,9 +19,9 @@ function waitAndClick(selector, callback) {
     const target = document.querySelector(selector);
 
     if (target) {
-        target.click();
-        if (callback) callback();
-        return;
+        //target.click();
+        //if (callback) callback();
+        //return;
     }
 
     const observer = new MutationObserver(() => {
@@ -45,7 +45,7 @@ function waitAndClick(selector, callback) {
 
 waitAndClick(`[data-tour="${argT}"]`, () => {
     waitAndClick(`[data-room="${argR}"]`, () => {
-        //waitAndClick('[data-seat="1"]');
+        //waitAndClick(`[data-room="${argR}"]`);
     });
 });
 async function loadRoomIndex() {

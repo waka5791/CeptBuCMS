@@ -13,8 +13,11 @@ let goalResultHash = { "goal": "達成", "round_over": "ラウンドオーバー
 $(async function () {
     await loadRoomIndex();
     renderTours();
+        loadRoomInfo(
+            argT,
+            argR
+        );
 });
-
 function waitAndClick(selector, callback) {
     const target = document.querySelector(selector);
 
@@ -50,6 +53,7 @@ waitAndClick(`[data-tour="${argT}"]`, () => {
         });
     });
 });
+
 async function loadRoomIndex() {
 
     roomIndex =

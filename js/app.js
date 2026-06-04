@@ -18,7 +18,7 @@ $(async function () {
             argT,
             argR
         );
-    }, 3000);
+    }, 1200);
 });
 function waitAndClick(selector, callback) {
     const target = document.querySelector(selector);

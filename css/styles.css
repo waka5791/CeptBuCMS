@@ -6,12 +6,12 @@ body {
 }
 
 .main-layout {
-    height: 100vh;
+    height: 95vh;
 }
 
 /* 左ペイン群 */
 .left-column {
-    height: 100vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -38,13 +38,13 @@ body {
 
 /* 右側カラム */
 .right-column {
-    height: 100vh;
+    height: 95vh;
     padding: 0;
 }
 
 /* ルーム情報 */
 #paneC {
-    height: 100vh;
+    height: 95vh;
     overflow-y: auto;
 
     border: 1px solid #ccc;

@@ -380,17 +380,17 @@ async function loadRoomInfo(
     room
 ) {
 
-    let tourConfText = "";
+    //let tourConfText = "";
     let confText = "";
     let rankText = "";
     let commentText = "";
 
     try {
         if (room > 0) {
-            tourConfText = await $.get(`room/${tour}/conf`);
+            //tourConfText = await $.get(`room/${tour}/conf`);
             confText = await $.get(`room/${tour}/${room}/conf`);
         } else {
-            tourConfText = await $.get(`room/${tour}/conf`);
+            //tourConfText = await $.get(`room/${tour}/conf`);
             confText = await $.get(`room/${tour}/conf`);
         }
     }
@@ -400,10 +400,7 @@ async function loadRoomInfo(
 
     try {
 
-        rankText =
-            await $.get(
-                `room/${tour}/${room}/rank`
-            );
+        //rankText = await $.get(`room/${tour}/${room}/rank`);
 
     }
     catch (e) {
@@ -426,7 +423,7 @@ async function loadRoomInfo(
     catch (e) {
 
     }
-    const tourConf = parseConf(tourConfText);
+    const tourConf = tourInfo[tour];//parseConf(tourConfText);
     const conf =
         parseConf(confText);
 
@@ -782,7 +779,6 @@ async function loadRoomInfo(
                 </div>
 
             </div>
-
         </div>
     `;
     }

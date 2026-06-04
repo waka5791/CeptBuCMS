@@ -91,9 +91,6 @@ async function loadRoomIndex() {
         }
     }
 */
-    const json = JSON.stringify(tourInfo);
-
-    console.log(json);
 }
 function renderTours() {
 
@@ -145,7 +142,8 @@ function renderTours() {
 
     $("#paneA").html(html);
     $("#announce").text("ﾅﾆｺﾚ");
-
+    const link = document.querySelector("#topPageLink");
+    link.setAttribute("href", url);
 }
 $(document).on(
     "click",
@@ -793,7 +791,7 @@ async function loadRoomInfo(
 }
 
 async function copyUrl() {
-    const url = document.getElementById("url").textContent;
+    const url = document.getElementById("url").textContent.trim();
     await navigator.clipboard.writeText(url);
     alert(`${url}` + " Copied.");
 }

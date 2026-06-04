@@ -9,7 +9,10 @@ let roomIndex = {};
 let tourInfo = {};
 let roomInfo = {};
 let goalResultHash = { "goal": "達成", "round_over": "ラウンドオーバー", "sudden_death": "サドンデス", undefined: "", "": "" };
-
+//tour > 61からcometeo利用
+//cometeo_cache.csv
+// tour%2F65%2F7,AUGveFwk
+//http://www.cometeo.com/room/AUGveFwk/
 $(async function () {
     await loadRoomIndex();
     renderTours();
@@ -434,6 +437,25 @@ async function loadRoomInfo(
 
     }
 
+    let cometeoLink = "";
+    if (tour > 60) {
+        //tour > 61からcometeo利用
+        //cometeo_cache.csv
+        // tour%2F65%2F7,AUGveFwk
+        //http://www.cometeo.com/room/AUGveFwk/
+
+        try {
+            cometeoCSV = await $.get(`room/${tour}/${room}/cometeo_cache.csv`);
+            if (cometeoCSV != undefined && cometeoCSV.length > 5) {
+                cometeoID = cometeoCSV.split(",")[1];
+                cometeoLink = `http://www.cometeo.com/room/${cometeoID}/`;
+            }
+        }
+        catch (e) {
+
+        }
+    }
+
     try {
         commentText =
             await $.get(
@@ -489,8 +511,7 @@ async function loadRoomInfo(
                 return;
             }
 
-            const cols =
-                line.split(",");
+            const cols = line.split(",");
 
             ranks.push({
 
@@ -545,7 +566,7 @@ async function loadRoomInfo(
 
     });
 
-    let commentsHtml = `
+    let commentsHtml = `    
         <table class="table table-striped table-sm align-middle">
 
         <thead>
@@ -823,11 +844,12 @@ async function loadRoomInfo(
         </div>
     `;
 
+        
         html += `
         <div class="card">
 
             <div class="card-header">
-                ルームコメント
+                ルームコメント ${cometeoLink.length > 0 ?  `<a href="${cometeoLink}" target="_blank">${cometeoLink}</a>`:""}
             </div>
 
             <div class="card-body">

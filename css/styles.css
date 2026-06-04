@@ -1,5 +1,6 @@
 html,
 body {
+    font-size: 0.875rem;
     height: 100%;
     margin: 0;
     overflow: hidden;
@@ -54,4 +55,9 @@ body {
 /* 見出し */
 h5 {
     margin-bottom: 10px;
+}
+
+#tourList, #roomList
+{
+    cursor: pointer;
 }

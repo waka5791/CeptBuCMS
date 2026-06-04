@@ -56,49 +56,48 @@ async function loadRoomIndex() {
         await $.getJSON(
             "data/room.json"
         );
-    tourInfo  =
+    tourInfo =
         await $.get(
             `data/tourconf.json`
         );
-/*
-    const tours =
-        Object.keys(roomIndex);
 
-    for (const tour of tours) {
-
-        try {
-
-            const confText =
-                await $.get(
-                    `room/${tour}/conf`
-                );
-
-            const conf =
-                parseConf(confText);
-
-            tourInfo[tour] = conf
-
+    const confText = await $.get(`room/casual/conf`);
+    const conf = parseConf(confText);
+    tourInfo["casual"] = conf;
+    /*
+        const tours =
+            Object.keys(roomIndex);
+    
+        for (const tour of tours) {
+    
+            try {
+    
+                const confText =
+                    await $.get(
+                        `room/${tour}/conf`
+                    );
+    
+                const conf =
+                    parseConf(confText);
+    
+                tourInfo[tour] = conf
+    
+            }
+            catch (e) {
+    
+                tourInfo[tour] = {
+    
+                    room_nickname:
+                        tour
+    
+                };
+    
+            }
         }
-        catch (e) {
-
-            tourInfo[tour] = {
-
-                room_nickname:
-                    tour
-
-            };
-
-        }
-    }
-*/
+    */
 }
 function renderTours() {
-
-    let html = `
-        <div
-            id="tourList"
-            class="list-group">
-    `;
+    let html = `<div id="tourList" class="list-group">`;
 
     Object.keys(roomIndex).forEach(function (tour) {
         let maps = "";
@@ -113,25 +112,20 @@ function renderTours() {
         }
         let winner = "";
         if (tourInfo[tour].tour_winner != "") {
-            winner = `／ 優勝： ${tourInfo[tour].tour_winner}`;
+            winner = `優勝： ${tourInfo[tour].tour_winner}`;
         }
         html += `
-
-                <a
-                    href="#"
-                    class="
-                        list-group-item
-                        list-group-item-action
-                        tour-link
-                    "
-                    data-tour="${tour}">
+        
+                <div href="#" class="list-group-item list-group-item-action tour-link" data-tour="${tour}">
+                    <div>
                     (${tour})
-                    ${decodeComment(
-            tourInfo[tour]?.room_nickname || tour
-        )}
+                    ${decodeComment(tourInfo[tour]?.room_nickname || tour)}
                     ${maps}
+                    </div>
+                    <div>
                     ${winner}
-                </a>
+                    </div>
+                </div>
             `;
 
     });
@@ -149,23 +143,13 @@ $(document).on(
     "click",
     ".tour-link",
     function (e) {
-
         e.preventDefault();
+        $("#tourList .tour-link").removeClass("active");
+        $(this).addClass("active");
+        renderRooms($(this).data("tour"));
+        currentTour = $(this).data("tour");
+        currentRoom = -1;
 
-        $("#tourList .tour-link")
-            .removeClass("active");
-
-        $(this)
-            .addClass("active");
-
-        renderRooms(
-            $(this).data("tour")
-        );
-        currentTour =
-            $(this).data("tour");
-
-        currentRoom =
-            -1;
         loadRoomInfo(
             currentTour,
             currentRoom
@@ -173,26 +157,68 @@ $(document).on(
     }
 );
 
-function renderRooms(tour) {
+let roomInfoX = {};
+async function xxxx(tour) {
+    roomInfoX = {};
+    let confText = "";
+    const rooms = roomIndex[tour];
+    try {
+        for (const room of rooms) {
+            try {
+                confText = await $.get(`room/${tour}/${room}/conf`);
+            } catch (e) {
+                continue;
+            }
+            let conf = parseConf(confText);
+            roomInfoX[room] = conf;
 
+            let text = `${room} `;
+
+            if (conf.rank != undefined) {
+                conf.rank.sort((x, y) => Number(x[0]) - Number(y[0]));
+
+                for (const r of conf.rank) {
+                    text += `${r[1]} `;
+                }
+            } else {
+                text += `${conf.players}`;
+            }
+            $(`[data-room="${room}"]`).text(text);
+        }
+    }
+    catch (e) {
+
+    }
+};
+
+function renderRooms(tour) {
     let html = "";
 
-    roomIndex[tour]
-        .forEach(function (room) {
-
-            html += `
-                <button
-                    class="btn btn-secondary btn-sm room-link"
-                    data-tour="${tour}"
-                    data-room="${room}">
+    roomIndex[tour].forEach(function (room) {
+        html += `
+                <button class="btn btn-secondary btn-sm room-link" data-tour="${tour}" data-room="${room}">
                     ${room}
                 </button>
             `;
+    });
 
-        });
+    html = `<div id="roomList" class="list-group">`;
+    roomIndex[tour].forEach(function (room) {
+
+        html += `        
+                <div class="list-group-item list-group-item-action room-link" data-tour="${tour}" data-room="${room}">
+                    <div>
+                    ${room}
+                    </div>
+                </div>
+            `;
+
+    });
+    html += "</div>";
 
     $("#paneB").html(html);
 
+    xxxx(tour);
 }
 let currentTour = null;
 let currentRoom = null;
@@ -200,24 +226,11 @@ $(document).on(
     "click",
     ".room-link",
     function (e) {
-
         e.preventDefault();
-
-        currentTour =
-            $(this).data("tour");
-
-        currentRoom =
-            $(this).data("room");
-
-        $(".room-link")
-            .removeClass("btn-primary");
-        $(".room-link")
-            .addClass("btn-secondary");
-        $(this)
-            .removeClass("btn-secondary");
-        $(this)
-            .addClass("btn-primary");
-
+        currentTour = $(this).data("tour");
+        currentRoom = $(this).data("room");
+        $("#roomList .room-link").removeClass("active");
+        $(this).addClass("active");
         loadRoomInfo(
             currentTour,
             currentRoom
@@ -364,7 +377,7 @@ function parseConf(text) {
 
 }
 function formatDateTime(str) {
-    if (str.length > 14) {
+    if (str == undefined || str.length > 14) {
         return str;
     }
     const date = new Date(
@@ -412,7 +425,6 @@ async function loadRoomInfo(
     }
 
     try {
-
         commentText =
             await $.get(
                 `room/${tour}/${room}/comment`
@@ -422,14 +434,17 @@ async function loadRoomInfo(
             decodeComment(
                 commentText.trim()
             );
-
     }
     catch (e) {
 
     }
-    const tourConf = tourInfo[tour];//parseConf(tourConfText);
-    const conf =
-        parseConf(confText);
+    let tourConf = tourInfo[tour];//parseConf(tourConfText);
+
+    const conf = parseConf(confText);
+
+    if (tour == "casual") {
+        tourConf = conf;
+    }
 
     const tourName =
         decodeComment(
@@ -627,7 +642,8 @@ async function loadRoomInfo(
 
     let html = ``;
 
-    html += `
+    if (tour != "casual") {
+        html += `
 
     <div class="card mb-3">
 
@@ -679,6 +695,36 @@ async function loadRoomInfo(
     </div>
 
     `;
+    } else {
+        html += `
+
+    <div class="card mb-3">
+        <div class="card-header">
+            No. ${tour} 
+            ${decodeComment(tourInfo[tour]?.room_nickname || tour)}
+        </div>
+        <div>
+        共有用URL
+        <span onclick="copyUrl()" style="cursor:pointer;">📋</span>
+        <code id="url">
+          ${url + `?t=${tour}` + `${room > 0 ? `&r=${room}` : ``}`}
+        </code>
+        </div>
+        <div class="card-body">
+            <div class="mb-3">
+                ${tourMap}
+                <div>
+                ${tourConf.gain}G
+                ${tourConf.round}R
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    `;
+    }
     if (room > 0) {
         html += `
         <div class="card mb-3">

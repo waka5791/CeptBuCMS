@@ -1,16 +1,53 @@
 
+const url = location.origin + location.pathname;
+const params = new URLSearchParams(window.location.search);
+
+const argT = params.get("t");
+const argR = params.get("r");
+
 let roomIndex = {};
 let tourInfo = {};
 let roomInfo = {};
+let goalResultHash = { "goal": "達成", "round_over": "ラウンドオーバー", "sudden_death": "サドンデス", undefined: "", "": "" };
 
 $(async function () {
-
     await loadRoomIndex();
-
     renderTours();
-
 });
 
+function waitAndClick(selector, callback) {
+    const target = document.querySelector(selector);
+
+    if (target) {
+        target.click();
+        if (callback) callback();
+        return;
+    }
+
+    const observer = new MutationObserver(() => {
+        const target = document.querySelector(selector);
+
+        if (target) {
+            target.click();
+            observer.disconnect();
+
+            if (callback) callback();
+        }
+    });
+
+    $(function () {
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    });
+}
+
+waitAndClick(`[data-tour="${argT}"]`, () => {
+    waitAndClick(`[data-room="${argR}"]`, () => {
+        //waitAndClick('[data-seat="1"]');
+    });
+});
 async function loadRoomIndex() {
 
     roomIndex =
@@ -117,7 +154,15 @@ $(document).on(
         renderRooms(
             $(this).data("tour")
         );
+        currentTour =
+            $(this).data("tour");
 
+        currentRoom =
+            -1;
+        loadRoomInfo(
+            currentTour,
+            currentRoom
+        );
     }
 );
 
@@ -311,22 +356,40 @@ function parseConf(text) {
     return result;
 
 }
+function formatDateTime(str) {
+    if (str.length > 14) {
+        return str;
+    }
+    const date = new Date(
+        +str.substr(0, 4),
+        +str.substr(4, 2) - 1,
+        +str.substr(6, 2),
+        +str.substr(8, 2),
+        +str.substr(10, 2)
+    );
 
+    const weekdays = ['日', '月', '火', '水', '木', '金', '土'];
+
+    return `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日（${weekdays[date.getDay()]}） ${String(date.getHours()).padStart(2, '0')}:${String(date.getMinutes()).padStart(2, '0')}`;
+}
 async function loadRoomInfo(
     tour,
     room
 ) {
 
+    let tourConfText = "";
     let confText = "";
     let rankText = "";
     let commentText = "";
 
     try {
-
-        confText =
-            await $.get(
-                `room/${tour}/${room}/conf`
-            );
+        if (room > 0) {
+            tourConfText = await $.get(`room/${tour}/conf`);
+            confText = await $.get(`room/${tour}/${room}/conf`);
+        } else {
+            tourConfText = await $.get(`room/${tour}/conf`);
+            confText = await $.get(`room/${tour}/conf`);
+        }
     }
     catch (e) {
 
@@ -360,7 +423,7 @@ async function loadRoomInfo(
     catch (e) {
 
     }
-
+    const tourConf = parseConf(tourConfText);
     const conf =
         parseConf(confText);
 
@@ -374,9 +437,17 @@ async function loadRoomInfo(
             conf.comment || ""
         );
 
-    const tourMap =
-        conf.map;
+    //const tourMap = conf.map;
 
+    let tourMap = "";
+    if (conf.use_maps != undefined) {
+        conf.use_maps.forEach(function (m) {
+            tourMap += `<img src="data/img/map/${m}.gif" title="${m}">`
+        });
+    }
+    else if (conf.map != undefined) {
+        tourMap = `<img src="data/img/map/${conf.map}.gif" title="${conf.map}">`;
+    }
     const ranks = [];
 
     rankText
@@ -409,7 +480,7 @@ async function loadRoomInfo(
 
                 score:
                     parseInt(
-                        cols[2] || 0
+                        cols[2] || 6543210
                     )
 
             });
@@ -491,14 +562,14 @@ async function loadRoomInfo(
             const userId =
                 (cols[4] || "")
                     .trim();
-
-            commentsHtml += `
+            if (!comment.includes("DO_")) {
+                commentsHtml += `
         <tr>
 
             <td>
 
                 ${imageUrl
-                    ? `
+                        ? `
                     <img
                         src="${escapeHtml(imageUrl)}"
                         alt="アイコン"
@@ -512,33 +583,35 @@ async function loadRoomInfo(
                             this.style.display='none'
                         ">
                     `
-                    : ""
-                }
+                        : ""
+                    }
 
             </td>
 
             <td>
 
                 ${escapeHtml(name)}
-                (${escapeHtml(userId)})
+                ${userId ? `(${escapeHtml(userId)})` : ""}
 
             </td>
 
             <td>
 
-                ${escapeHtml(comment)}
+                ${escapeHtml(comment).replace(":blue_start:", '<span class="text-primary">').replace(":blue_end:", '</span>')
+                        .replace(":red_start:", '<span class="text-danger">').replace(":red_end:", '</span>')
+                    }
 
             </td>
 
             <td>
 
-                ${escapeHtml(date)}
+                ${escapeHtml(formatDateTime(date))}
 
             </td>
 
         </tr>
         `;
-
+            }
         });
 
     }
@@ -555,20 +628,34 @@ async function loadRoomInfo(
     <div class="card mb-3">
 
         <div class="card-header">
-                        No. ${tour} 
-                        ${decodeComment(
-        tourInfo[tour]
-            ?.room_nickname
-        || tour
-    )
-        }
+            No. ${tour} 
+            ${decodeComment(tourInfo[tour]?.room_nickname || tour)}
         </div>
-
+        <div>
+        共有用URL
+        <span onclick="copyUrl()" style="cursor:pointer;">📋</span>
+        <code id="url">
+          ${url + `?t=${tour}` + `${room > 0 ? `&r=${room}` : ``}`}
+        </code>
+        </div>
         <div class="card-body">
 
             <div class="mb-3">
-<img src="data/img/map/${tourMap}.gif" title="${tourMap}">
-
+                ${tourMap}
+                <div>
+                ${formatDateTime(tourConf.tour_spanS)} ～ ${formatDateTime(tourConf.tour_spanE)}
+                </div>
+                <div>
+                ${tourConf.hatena_user_name}
+                ${tourConf.sponsorship_partner}
+                </div>
+                <div>
+                ${tourConf.gain}G
+                ${tourConf.round}R
+                ${tourConf.sudden_death == "o" ? "サドンデスあり" : "サドンデスなし"}
+                ${tourConf.point_in_tour_vs4}
+                ${tourConf.point_in_tour_vs4_ov}
+                </div>
             </div>
 
             <div>
@@ -578,13 +665,7 @@ async function loadRoomInfo(
                 </strong>
 
                 <div>
-
-                    ${escapeHtml(
-            tourComment
-        ) || "-"
-
-        }
-
+                    ${tourComment.replace(/^/m, "<div>").replace(/$/m, "</div>")}
                 </div>
 
             </div>
@@ -594,13 +675,19 @@ async function loadRoomInfo(
     </div>
 
     `;
-
-    html += `
+    if (room > 0) {
+        html += `
         <div class="card mb-3">
 
             <div class="card-header">
                     【${room}】
                     ${escapeHtml(tourName) || "-"}
+                    <div>
+                    ${formatDateTime(conf.regist_time)}
+                    ${goalResultHash[conf.goal_result]}
+                    ${conf.goal_round}
+                    ${conf.now_doing}
+                    </div>
             </div>
 
             <div class="card-body">
@@ -635,10 +722,10 @@ async function loadRoomInfo(
                     <tbody>
     `;
 
-    if (ranks.length > 0) {
-        ranks.forEach(function (r) {
-
-            html += `
+        if (ranks.length > 0) {
+            ranks.forEach(function (r) {
+                if (r.score == 6543210) { r.score = "-" }
+                html += `
         <tr>
 
             <td>
@@ -650,8 +737,8 @@ async function loadRoomInfo(
             <td>
 
                 ${escapeHtml(
-                r.player
-            )}
+                    r.player
+                )}
 
             </td>
 
@@ -664,9 +751,9 @@ async function loadRoomInfo(
         </tr>
         `;
 
-        });
-    }
-    html += `
+            });
+        }
+        html += `
                     </tbody>
 
                 </table>
@@ -676,7 +763,7 @@ async function loadRoomInfo(
         </div>
     `;
 
-    html += `
+        html += `
         <div class="card">
 
             <div class="card-header">
@@ -695,7 +782,13 @@ async function loadRoomInfo(
 
         </div>
     `;
-
+    }
     $("#paneC").html(html);
 
+}
+
+async function copyUrl() {
+    const url = document.getElementById("url").textContent;
+    await navigator.clipboard.writeText(url);
+    alert(`${url}` + " Copied.");
 }

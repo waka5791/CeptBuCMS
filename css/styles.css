@@ -19,7 +19,7 @@ body {
 
 /* ツアー一覧 */
 #paneA {
-    height: 40%;
+    height: 50%;
     overflow-y: auto;
 
     border: 1px solid #ccc;
@@ -28,7 +28,7 @@ body {
 
 /* ルーム一覧 */
 #paneB {
-    height: 60%;
+    height: 50%;
     overflow-y: auto;
 
     border: 1px solid #ccc;
